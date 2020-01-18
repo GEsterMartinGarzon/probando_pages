@@ -6,7 +6,7 @@ index.html:	*.tex \
 		articles.bbl 
 
 # Regla para generar los .bbl a partir de los .tex
-%.bbl:	../%.tex
+%.bbl:	%.tex
 	(export TEXINPUTS=${TEXINPUTS}; latex $*)
 	(export BIBINPUTS=${BIBINPUTS}; bibtex $*)
 
